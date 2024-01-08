@@ -18,20 +18,20 @@ export default function Index() {
 
   return (
     <div className="flex h-screen w-full flex-col items-center justify-center bg-black text-white">
-      <nav className="w-full flex justify-center border-b border-b-foreground/10 h-16">
-        <div className="w-full max-w-4xl flex justify-between items-center p-3 text-sm">
+      <nav className="w-full flex justify-center h-16">
+        <div className="w-full max-w-4xl flex justify-end items-center p-3 text-sm">
           {isSupabaseConnected && <AuthButton />}
         </div>
       </nav>
       {/* This is where the "OpenGym" heading from your HTML goes */}
 
       <div className="animate-in flex-1 flex flex-col gap-20 opacity-0 max-w-4xl px-3">
-        <main className="flex-1 flex flex-col gap-6">
+        <main className="flex flex-col items-center justify-center flex-1 w-full">
           <h1 className="text-clamp text-center font-bold">OpenGym</h1>
         </main>
       </div>
 
-      <footer className="w-full border-t border-t-foreground/10 p-8 flex justify-center text-center text-xs">
+      <footer className="w-full p-8 flex justify-center text-center text-xs">
         <p className="font-bold hover:underline">
           Developed by{' '}
           <a
