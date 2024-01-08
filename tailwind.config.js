@@ -14,6 +14,9 @@ module.exports = {
           'background-hover': 'hsl(var(--btn-background-hover))',
         },
       },
+      fontSize: {
+        clamp: "clamp(2rem, 8vw, 12rem)", // Customize this line as needed
+      },
     },
   },
   plugins: [],
