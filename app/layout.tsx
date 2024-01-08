@@ -1,5 +1,6 @@
 import { GeistSans } from 'geist/font/sans'
 import './globals.css'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/react';
 
 const defaultUrl = process.env.VERCEL_URL
@@ -24,6 +25,7 @@ export default function RootLayout({
           {children}
         </main>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
